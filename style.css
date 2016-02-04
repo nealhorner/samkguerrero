@@ -1,0 +1,130 @@
+#map {
+  position:top-right;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:10px;
+  height:800px;
+  width:100%;
+}
+
+article {
+  position:absolute;
+  z-index: 1;
+  top:0;
+  margin-top:10px;
+  margin-left:200px;
+  margin-right:200px;
+  height:800px;
+  right:100px;
+  left:0;
+  width:400px;
+  overflow:auto;
+}
+
+::-webkit-scrollbar
+{
+  width: 10px;  /* for vertical scrollbars */
+  height: 0px; /* for horizontal scrollbars */
+}
+
+::-webkit-scrollbar-track
+{
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb
+{
+  background: #6A916A;
+}
+
+section {
+  padding:20px;
+  width: 400px;
+  height:400px;
+  color:red;
+  -webkit-transition:background 500ms, color 500ms;
+          transition:background 500ms, color 500ms;
+}
+
+section.active {
+  background:#6A916A;
+  width: 400px;
+  height:350px;
+}
+
+.sections {
+  background:rgba(255,255,255,0.5);
+  width:400px;
+}
+
+.image{
+  width:300px;
+  height:300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+img{
+  width:250px;
+  height:200px;
+}
+
+h4 {
+  color:white;
+  text-align:center;
+  font-weight: bold;
+}
+
+.quiet {
+  color:rgba(0,0,0,0.5);
+}
+.scroll {
+  display:block;
+  text-align:center;
+}
+
+div.leaflet-control-layers.leaflet-control{
+  margin-top:0px;
+  margin-right:125px;
+}
+
+.menu-ui {
+  background:#fff;
+  position:absolute;
+  margin-top:0px;
+  margin-right:0px;
+  top:10px;right:10px;
+  z-index:1;
+  border-radius:3px;
+  width:120px;
+  border:1px solid rgba(0,0,0,0.4);
+  }
+  .menu-ui a {
+    font-size:13px;
+    color:#404040;
+    display:block;
+    margin:0;padding:0;
+    padding:10px;
+    text-decoration:none;
+    border-bottom:1px solid rgba(0,0,0,0.25);
+    text-align:center;
+    }
+    .menu-ui a:first-child {
+      border-radius:3px 3px 0 0;
+      }
+    .menu-ui a:last-child {
+      border:none;
+      border-radius:0 0 3px 3px;
+      }
+    .menu-ui a:hover {
+      background:#f8f8f8;
+      color:#404040;
+      }
+    .menu-ui a.active {
+      background:#004C00;
+      color:#FFF;
+      }
+      .menu-ui a.active:hover {
+        background:#3074a4;
+        }
