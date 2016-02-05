@@ -7,6 +7,16 @@ function init() {
       'worldCopyJump': true
   }).setView([42.12267, -72.60315], 8);
 
+  // Disable drag and zoom handlers.
+  map.dragging.disable();
+  map.touchZoom.disable();
+  map.doubleClickZoom.disable();
+  map.scrollWheelZoom.disable();
+  map.keyboard.disable();
+  
+  // Disable tap handler, if present.
+  if (map.tap) map.tap.disable();
+  
   var location = {
       radius: 18,
       fillColor: "rgb(0,128,43)",
